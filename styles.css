@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Arapey');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arapey";
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 30%;
+}
+
+section{
+    height: 100vh;
+    padding: 3rem;
+    position: relative;
+
+}
+
+blockquote{
+    font-size: 2rem;
+    width: 30%;
+    margin-top: 17%;
+    position: absolute;
+}
+
+span{
+    width: 100%;
+    background-color: red;
+    display: block;
+    height: 5px;
+    margin-top: 20px;
+}
+/* span will be taking 100% width of blockquote that is 30% */
+
+img{
+    position: absolute;
+}
+
+.sticky img:nth-of-type(1){
+    width: 40%;
+    right: 0;
+    top:8%;
+}
+
+.sticky img:nth-of-type(2){
+    width: 25%;
+    right: 40%;
+    top: 29%;
+    margin-top: 15%;
+}
+
+section:nth-child(odd){
+    background-color: cadetblue;
+}
+
+.sticky{
+    background-color: white !important;
+}
+
+#box{
+    height: 100px;
+    width: 100px;
+    border: 5px solid lightgray;
+    position: absolute;
+    top:0;left:0;right: 0;bottom:0;
+    margin:auto;
+}
+
+.imgAnim{
+    height: 100vh;
+    background-color: black !important;
+    z-index: -100;
+}
+
+.imgAnim img{
+    position: absolute;
+    width: 40%;
+    background-size: cover;
+}
+/* 
+somehow width:100% in the .imgAnim increases the size of screen */
+
+.imgAnim img:nth-child(1){
+    opacity: 1;
+    left:0; 
+    top:0;
+    margin:0;
+}
+
+.imgAnim img:nth-child(2){
+    opacity: 1;
+    right:0; 
+    top:-500px;
+    margin:0;
+    z-index: -10;
+}
+
+.imgAnim img:nth-child(3){
+    opacity: 1;
+    left:-600px; 
+    bottom:0;
+    margin:0;
+}
+
+.imgAnim img:nth-child(4){
+    opacity: 1;
+    bottom:0; 
+    right:0;
+    margin:0;
+}
+
+.yu{
+    height: 100vh;
+    background-color: red !important;
+}
